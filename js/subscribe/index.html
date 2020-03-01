@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button class='btn'>click</button>
+  <script src='subscribe.js'></script>
+  <script>
+    let pond = _sub();
+    let fn1 = function () { alert(1) };
+    let fn2 = function () {
+      alert(2);
+      pond.remove(fn1);
+    };
+    let fn3 = function (param) { alert(param) };
+    pond.add(fn1);
+    pond.add(fn1);
+    pond.add(fn1);
+    pond.add(fn2);
+    pond.add(fn3);
+    document.querySelector('.btn').onclick = function () {
+      pond.fire('asdf');
+    }
+  </script>
+</body>
+
+</html>
