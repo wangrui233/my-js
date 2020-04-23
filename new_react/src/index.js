@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+let rep = 'obj'
+
+let Newdoom = (
+  <div>
+    {rep}
+  </div>
+)
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {Newdoom}
   </React.StrictMode>,
   document.getElementById('root')
 );
