@@ -16,6 +16,8 @@
     <div>
       {{message2.a2.b2}}
       <input type="text" v-model="message2.a2.b2">
+      {{message3}}
+      <textarea name="asd" id="" cols="30" rows="10" type='text' v-model="message3">{{message3}}</textarea>
     </div>
   </div>
   <script src='./watcher.js'></script>
@@ -36,6 +38,7 @@
             b2: 'Hello World222!'
           }
         },
+        message3: 'abc'
       }
     })
   </script>
