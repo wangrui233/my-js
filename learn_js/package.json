@@ -17,7 +17,7 @@
     "eslint-plugin-standard": "^4.0.1"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "http": "0.0.0",
     "recast": "^0.18.5"
   }
